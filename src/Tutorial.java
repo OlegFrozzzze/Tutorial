@@ -10,7 +10,6 @@ public class Tutorial {
         int a = 1;
         System.out.println((char)('\\'+a));
         return (char)('\\'+a);
-
        // Simple();
        // Tutorial();
         //flipBit();
