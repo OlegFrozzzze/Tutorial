@@ -8,6 +8,7 @@ public class Tutorial {
        // Simple();
        // Tutorial();
         flipBit();
+        
     }
     public static int flipBit() {
         int value = 2;
