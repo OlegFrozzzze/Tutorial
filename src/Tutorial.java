@@ -1,38 +1,25 @@
 import Tom1.TaskOne;
-
+import Tom1.TaskTwo;
 import java.security.MessageDigest;
+
+import static Tom1.TaskOne.charExpression;
+
 /**
  * Created by ОЛЕГ on 17.07.2017.
  */
 public class Tutorial {
     public static void main(String[] args) throws Exception {
         System.out.println("It's alive! It's alive!");
-        //charExpression();
-//        isPowerOfTwo();
 //        Simple();
 //        Tutorial();
 //        flipBit();
-        charExpression();
-        }
-    public static  boolean isPowerOfTwo(){
-        int value = 0;
-        if (value == 0) {
-            return false;
-
-        }
-        else {
-            int rol = Math.abs(value);
-            return (rol & (rol - 1)) == 0;
+        TaskOne.charExpression();
+        TaskTwo.isPowerOfTwo();
         }
 
-    }
 
 
-        public static char charExpression() throws Exception {
-        int a = 1;
-        System.out.println((char)('\\'+a));
-        return (char)('\\'+a);
-    }
+
     public static int flipBit() {
         int value = 2;
         int bitIndex = 6;
