@@ -1,5 +1,6 @@
 import Tom1.TaskOne;
 import Tom1.TaskTwo;
+import Tom1.TaskThee;
 import java.security.MessageDigest;
 
 import static Tom1.TaskOne.charExpression;
@@ -15,17 +16,9 @@ public class Tutorial {
 //        flipBit();
         TaskOne.charExpression();
         TaskTwo.isPowerOfTwo();
+        TaskThee.flipBit();
         }
 
-
-
-
-    public static int flipBit() {
-        int value = 2;
-        int bitIndex = 6;
-        System.out.println(value^(1 << bitIndex-1)); // put your implementation here
-        return value^(1 << bitIndex-1);
-    }
     public static void Tutorial() throws Exception {
         MessageDigest md = MessageDigest.getInstance("MD5");
         byte[] digest = md.digest("abracadabra".getBytes("UTF-8"));
