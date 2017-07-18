@@ -5,6 +5,7 @@ import java.security.MessageDigest;
 public class Tutorial {
     public static void main(String[] args) throws Exception {
         System.out.println("It's alive! It's alive!");
+        Simple();
         Tutorial();
     }
     public static void Tutorial() throws Exception {
@@ -14,5 +15,10 @@ public class Tutorial {
             System.out.printf("%02x", b);
         }
 
+
+    }
+    public static void Simple(){
+        double hex = 0x0bp3;
+        System.out.println(hex);
     }
 }
