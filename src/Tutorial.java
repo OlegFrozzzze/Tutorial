@@ -5,11 +5,27 @@ import java.security.MessageDigest;
 public class Tutorial {
     public static void main(String[] args){
         System.out.println("It's alive! It's alive!");
-        charExpression();
-        }public static char charExpression() {
-        int a = 1;
-        System.out.println((char)('\\'+a));
-        return (char)('\\'+a);
+        //charExpression();
+        isPowerOfTwo();
+
+        }
+    public static  boolean isPowerOfTwo(){
+        int value = 0;
+        if (value == 0) {
+            return false;
+
+        }
+        else {
+            int rol = Math.abs(value);
+            return (rol & (rol - 1)) == 0;
+        }
+
+    }
+
+//        public static char charExpression() {
+//        int a = 1;
+//        System.out.println((char)('\\'+a));
+//        return (char)('\\'+a);
        // Simple();
        // Tutorial();
         //flipBit();
@@ -35,4 +51,4 @@ public class Tutorial {
 //        System.out.println(hex);
 //    }
 
-}
+
