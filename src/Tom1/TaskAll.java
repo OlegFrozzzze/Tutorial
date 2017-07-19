@@ -8,6 +8,6 @@ public class TaskAll {
         TaskFive.Simple();
         TaskFour.Tutorial();
         TaskSix.Def();
-
+        TaskEight.factorial();
     }
 }
