@@ -7,5 +7,6 @@ public class TaskSeven {
         strBuilder.reverse();
         String invertedText = strBuilder.toString();
         return text.equalsIgnoreCase(invertedText) ;
+
     }
 }
