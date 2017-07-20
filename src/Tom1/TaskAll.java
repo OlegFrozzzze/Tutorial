@@ -9,5 +9,9 @@ public class TaskAll {
         TaskFour.Tutorial();
         TaskSix.Def();
         TaskEight.factorial();
+        TaskNine.mergeArrays(new int[]{4, 7, 9, 3}, new int[]{2, 9, 8, 6});
+        TaskNine.mergeArrays2(new int[]{4, 7, 9, 3}, new int[]{2, 9, 8, 6});
     }
+
+
 }
