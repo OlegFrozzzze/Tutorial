@@ -13,6 +13,4 @@ public class TaskAll {
         TaskNine.mergeArrays2(new int[]{4, 7, 9, 3}, new int[]{2, 9, 8, 6});
         TaskTen.printTextPerRole();
     }
-
-
 }

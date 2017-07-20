@@ -3,7 +3,7 @@ package Tom1;
 public class TaskTen {
     public static String printTextPerRole() {
         String[] roles = new String[0];
-        String[] textLines = new String [0];
+        String[] textLines = new String[0];
         StringBuilder resultText = new StringBuilder();
 
         for (String role : roles) {
@@ -18,10 +18,8 @@ public class TaskTen {
                     resultText.append((i + 1) + ") " + roleText + "\n");
                 }
             }
-
             resultText.append("\n");
         }
-
         return resultText.toString();
     }
 }
