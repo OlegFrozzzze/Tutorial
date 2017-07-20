@@ -5,5 +5,6 @@ public class AllTask {
         RegexTest.Regex();
         TaskJavaRush.Task();
         TaskStepik.Text();
+        StepikOne.text();
     }
 }
