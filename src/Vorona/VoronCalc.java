@@ -18,5 +18,9 @@ public class VoronCalc extends JFrame{
         countLabel =  new JLabel("Crow:" + voron); // Создаём объект с текстом + колличество ворон
         addCrow = new JButton("Add Crow"); // Добовляем кнопку и текстом
         removeCrow = new JButton("Remove Crow"); // Добовляем кнопку и текстом
+
+        //Подготавливаю временные компоненты 
+        JPanel buttonsPanel =  new JPanel(new FlowLayout());
+
     }
 }
