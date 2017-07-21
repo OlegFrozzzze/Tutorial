@@ -7,7 +7,7 @@ public class Game extends JFrame {
         super("Me First Window"); // Заголовок Окна
         setBounds(100, 100, 200, 200); //выстовляем размер окна
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//закрываем окно и завершаем программу
-        myWindowApp();
+
     }
     public static void myWindowApp(){
         Game app = new Game();
