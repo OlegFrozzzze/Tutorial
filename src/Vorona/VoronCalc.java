@@ -19,8 +19,13 @@ public class VoronCalc extends JFrame{
         addCrow = new JButton("Add Crow"); // Добовляем кнопку и текстом
         removeCrow = new JButton("Remove Crow"); // Добовляем кнопку и текстом
 
-        //Подготавливаю временные компоненты 
+        //Подготавливаю временные компоненты
         JPanel buttonsPanel =  new JPanel(new FlowLayout());
-
+        //Росставляю компоненты по местам
+        add(countLabel, BorderLayout.NORTH); //Потом можно поменять если будет не красиво
+        buttonsPanel.add(addCrow);
+        buttonsPanel.add(removeCrow);
+        add(buttonsPanel, BorderLayout.SOUTH);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
