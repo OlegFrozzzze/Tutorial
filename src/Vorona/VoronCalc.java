@@ -13,7 +13,7 @@ public class VoronCalc extends JFrame{
 
     public VoronCalc(){
         super("Crow colculator");
-
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //Подготавливаю комоненты объекта
         countLabel =  new JLabel("Crow: " + voron); // Создаём объект с текстом + колличество ворон
         addCrow = new JButton("Add Crow"); // Добовляем кнопку и текстом
@@ -26,8 +26,16 @@ public class VoronCalc extends JFrame{
         buttonsPanel.add(addCrow);
         buttonsPanel.add(removeCrow);
         add(buttonsPanel, BorderLayout.SOUTH);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
+    
+
+
+
+
+
+
+
     public static void Vorona(){
         VoronCalc app = new VoronCalc();
         app.setVisible(true);
