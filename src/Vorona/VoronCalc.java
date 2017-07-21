@@ -11,5 +11,12 @@ public class VoronCalc extends JFrame{
     private JButton addCrow; // кнопка для добавления вароны
     private JButton removeCrow; // Кнопка для удоления вороны
 
+    public VoronCalc(){
+        super("Crow colculator");
 
+        //Подготавливаю комоненты объекта
+        countLabel =  new JLabel("Crow:" + voron); // Создаём объект с текстом + колличество ворон
+        addCrow = new JButton("Add Crow"); // Добовляем кнопку и текстом
+        removeCrow = new JButton("Remove Crow"); // Добовляем кнопку и текстом
+    }
 }
