@@ -28,4 +28,9 @@ public class VoronCalc extends JFrame{
         add(buttonsPanel, BorderLayout.SOUTH);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+    public static void Vorona(){
+        VoronCalc app = new VoronCalc();
+        app.setVisible(true);
+        app.pack();//Эта команда подбирает оптимальный размер в зависимости от содержимого окна
+    }
 }
