@@ -16,7 +16,7 @@ public class Note extends JFrame{
     public Note(){
         super ("Note");
         initMenu();
-        //initMainPanel();
+        initMainPanel();
         //initListeners();
     }
     private void initMenu(){
@@ -37,5 +37,11 @@ public class Note extends JFrame{
         menuBar.add(fileMenu);
         menuBar.add(helpMenu);
         this.setMenuBar(menuBar);
+    }
+    private void initMainPanel(){
+        JPanel panel = new JPanel(new BorderLayout());
+        theText = new JTextArea();
+        panel.add(new JScrollPane(theText), BorderLayout.CENTER);
+        getContentPane().add(panel);
     }
 }
