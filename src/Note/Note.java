@@ -58,6 +58,10 @@ public class Note extends JFrame {
                 //Добавить меню помощи
             }
         });
-        
+        menuSave.addActionListener(new AbstractAction() {
+            public void actionPerformed(ActionEvent e) {
+                //Добавить меню сохранения
+            }
+        });
     }
 }
