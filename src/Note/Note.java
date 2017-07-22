@@ -15,9 +15,6 @@ public class Note extends JFrame {
 
     public Note() {
         super("Note");
-        initMenu();
-        initMainPanel();
-        initListeners();
     }
 
     private void initMenu() {
@@ -53,7 +50,7 @@ public class Note extends JFrame {
                 System.exit(0);
             }
         });
-        menuAbout.addActionListener(new ActionListener(){
+        menuAbout.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 //Добавить меню помощи
             }
@@ -63,12 +60,12 @@ public class Note extends JFrame {
                 //Добавить меню сохранения
             }
         });
-        menuExit.addActionListener(new ActionListener(){
+        menuExit.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 System.exit(0);
             }
         });
-        menuOpen.addActionListener(new ActionListener(){
+        menuOpen.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 // Добавить открытие файла
             }

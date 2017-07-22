@@ -1,3 +1,4 @@
+import Note.Note;
 import Tom1.*;
 import HomeWork.*;
 import NewTask.*;
@@ -8,7 +9,8 @@ public class Tutorial {
         //  TaskAll.Hello();
 //      AllTask.allTask();
        // Game.myWindowApp();
-        VoronCalc.Vorona();
+       // VoronCalc.Vorona();
+
     }
 }
 
