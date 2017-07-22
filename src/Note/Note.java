@@ -15,10 +15,17 @@ public class Note extends JFrame{
 
     public Note(){
         super ("Note");
-        //initMenu();
+        initMenu();
         //initMainPanel();
         //initListeners();
     }
-        
+    private void initMenu(){
+        PopupMenu fileMenu = new PopupMenu("File");
+        PopupMenu helpMenu = new PopupMenu("Help");
 
+        menuOpen = new MenuItem("Open", new MenuShortcut(KeyEvent.VK_O));
+        menuSave =  new MenuItem("Save", new MenuShortcut(KeyEvent.VK_O));
+        menuExit = new MenuItem("Exit", new MenuShortcut(KeyEvent.VK_O));
+        menuAbout = new MenuItem("About", new MenuShortcut(KeyEvent.VK_O));
+    }
 }
