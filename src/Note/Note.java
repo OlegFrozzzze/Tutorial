@@ -27,5 +27,15 @@ public class Note extends JFrame{
         menuSave =  new MenuItem("Save", new MenuShortcut(KeyEvent.VK_O));
         menuExit = new MenuItem("Exit", new MenuShortcut(KeyEvent.VK_O));
         menuAbout = new MenuItem("About", new MenuShortcut(KeyEvent.VK_O));
+
+        fileMenu.add(menuOpen);
+        fileMenu.add(menuSave);
+        fileMenu.add(menuExit);
+
+        helpMenu.add(menuAbout);
+
+        menuBar.add(fileMenu);
+        menuBar.add(helpMenu);
+        this.setMenuBar(menuBar);
     }
 }
