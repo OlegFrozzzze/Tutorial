@@ -68,5 +68,10 @@ public class Note extends JFrame {
                 System.exit(0);
             }
         });
+        menuOpen.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent arg0) {
+                // Добавить открытие файла
+            }
+        });
     }
 }
