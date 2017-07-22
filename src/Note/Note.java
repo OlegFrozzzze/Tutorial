@@ -53,5 +53,11 @@ public class Note extends JFrame {
                 System.exit(0);
             }
         });
+        menuAbout.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e) {
+                //Добавить меню помощи
+            }
+        });
+        
     }
 }
