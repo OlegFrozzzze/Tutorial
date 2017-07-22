@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class Note extends JFrame{
+public class Note extends JFrame {
     MenuBar menuBar = new MenuBar();
     private MenuItem menuOpen; //Элемент меню
     private MenuItem menuSave;//Элемент меню
@@ -13,18 +13,19 @@ public class Note extends JFrame{
     private MenuItem menuAbout;//Элемент меню
     private JTextArea theText; //Поле ввода текста
 
-    public Note(){
-        super ("Note");
+    public Note() {
+        super("Note");
         initMenu();
         initMainPanel();
-        //initListeners();
+        initListeners();
     }
-    private void initMenu(){
+
+    private void initMenu() {
         PopupMenu fileMenu = new PopupMenu("File");
         PopupMenu helpMenu = new PopupMenu("Help");
 
         menuOpen = new MenuItem("Open", new MenuShortcut(KeyEvent.VK_O));
-        menuSave =  new MenuItem("Save", new MenuShortcut(KeyEvent.VK_O));
+        menuSave = new MenuItem("Save", new MenuShortcut(KeyEvent.VK_O));
         menuExit = new MenuItem("Exit", new MenuShortcut(KeyEvent.VK_O));
         menuAbout = new MenuItem("About", new MenuShortcut(KeyEvent.VK_O));
 
@@ -38,10 +39,19 @@ public class Note extends JFrame{
         menuBar.add(helpMenu);
         this.setMenuBar(menuBar);
     }
-    private void initMainPanel(){
+
+    private void initMainPanel() {
         JPanel panel = new JPanel(new BorderLayout());
         theText = new JTextArea();
         panel.add(new JScrollPane(theText), BorderLayout.CENTER);
         getContentPane().add(panel);
+    }
+
+    private void initListeners() {
+        this.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
     }
 }
