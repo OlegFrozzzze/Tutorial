@@ -84,8 +84,18 @@ public class Calculator extends JFrame{
                 display.setText(display.getText()+"3");
             }
         });
-
-
+        button4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                display.setText(display.getText()+"4");
+            }
+        });
+        button5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                display.setText(display.getText()+"5");
+            }
+        });
     }
 
 
