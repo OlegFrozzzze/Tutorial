@@ -12,15 +12,15 @@ import javax.swing.*;
 //TODO 1.2) Созать понель с кнопками и числами
 // TODO 1.2.1) Кнопки должны быть от 1 до 0, + - / *, =, C
 
-public class Calculator extends JFrame{
-    public  Calculator(){
-        super ("Calculator");
+public class Calculator extends JFrame {
+    public Calculator() {
+        super("Calculator");
         setBounds(700, 300, 500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        JTextArea display= new JTextArea();//дисплей калькулятора
-        JPanel buttonPanel = new JPanel(new GridLayout(3,5));//панель с кнопками
+        JTextArea display = new JTextArea();//дисплей калькулятора
+        JPanel buttonPanel = new JPanel(new GridLayout(3, 5));//панель с кнопками
         JButton button0 = new JButton("0");//кнопка 0
         JButton button1 = new JButton("1");//кнопка 1
         JButton button2 = new JButton("2");//кнопка 2
@@ -38,9 +38,9 @@ public class Calculator extends JFrame{
         JButton buttonMul = new JButton("*");//кнопка *
         JButton buttonStart = new JButton("=");//кнопка =
 
-        add(display,BorderLayout.NORTH);
-        add(buttonPanel,BorderLayout.CENTER);
-        add(buttonStart,BorderLayout.SOUTH);
+        add(display, BorderLayout.NORTH);
+        add(buttonPanel, BorderLayout.CENTER);
+        add(buttonStart, BorderLayout.SOUTH);
         buttonPanel.add(button0);
         buttonPanel.add(button1);
         buttonPanel.add(button2);
@@ -61,74 +61,67 @@ public class Calculator extends JFrame{
         button0.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"0");
+                display.setText(display.getText() + "0");
             }
         });
 
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"1");
+                display.setText(display.getText() + "1");
             }
         });
 
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"2");
+                display.setText(display.getText() + "2");
             }
         });
         button3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"3");
+                display.setText(display.getText() + "3");
             }
         });
         button4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"4");
+                display.setText(display.getText() + "4");
             }
         });
         button5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"5");
+                display.setText(display.getText() + "5");
             }
         });
         button6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"6");
+                display.setText(display.getText() + "6");
             }
         });
         button7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"7");
+                display.setText(display.getText() + "7");
             }
         });
         button8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"8");
+                display.setText(display.getText() + "8");
             }
         });
         button9.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText()+"9");
+                display.setText(display.getText() + "9");
             }
         });
     }
-
-
-
-
-
-
-
-    public static void CalculatorMain(){
-        Calculator calculator  =  new Calculator();
+    public static void CalculatorMain() {
+        Calculator calculator = new Calculator();
     }
 }
