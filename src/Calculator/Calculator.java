@@ -1,6 +1,8 @@
 package Calculator;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
 //TODO 1) Создать графическое предстовление калькулятор
@@ -55,6 +57,14 @@ public class Calculator extends JFrame{
         buttonPanel.add(buttonBack);
         buttonPanel.add(buttonDivide);
         setVisible(true);
+
+        button0.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                display.setText(display.getText()+"0");
+            }
+        });
+
     }
 
 
