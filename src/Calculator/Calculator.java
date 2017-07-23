@@ -14,9 +14,9 @@ public class Calculator extends JFrame{
     public  Calculator(){
         super ("Calculator");
         setBounds(700, 300, 500, 500);
-        setVisible(true);
+
         setLayout(new BorderLayout());
-        
+
         JTextArea display= new JTextArea();//дисплей калькулятора
         JPanel buttonPanel = new JPanel(new GridLayout(3,5));//панель с кнопками
         JButton button0 = new JButton("0");//кнопка 0
@@ -35,7 +35,28 @@ public class Calculator extends JFrame{
         JButton buttonSub = new JButton("-");//кнопка -
         JButton buttonMul = new JButton("*");//кнопка *
         JButton buttonStart = new JButton("=");//кнопка =
+
+        add(display,BorderLayout.NORTH);
+        add(buttonPanel,BorderLayout.CENTER);
+        add(buttonStart,BorderLayout.SOUTH);
+        buttonPanel.add(button0);
+        buttonPanel.add(button1);
+        buttonPanel.add(button2);
+        buttonPanel.add(button3);
+        buttonPanel.add(button4);
+        buttonPanel.add(button5);
+        buttonPanel.add(button6);
+        buttonPanel.add(button7);
+        buttonPanel.add(button8);
+        buttonPanel.add(button9);
+        buttonPanel.add(buttonSum);
+        buttonPanel.add(buttonSub);
+        buttonPanel.add(buttonMul);
+        buttonPanel.add(buttonBack);
+        buttonPanel.add(buttonDivide);
+        setVisible(true);
     }
+
 
 
 
