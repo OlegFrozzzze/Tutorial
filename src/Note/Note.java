@@ -15,6 +15,10 @@ public class Note extends JFrame {
 
     public Note() {
         super("Note");
+        setBounds(1000, 300, 500, 500);
+        initMenu();
+        initMainPanel();
+        initListeners();
     }
 
     private void initMenu() {
@@ -70,5 +74,10 @@ public class Note extends JFrame {
                 // Добавить открытие файла
             }
         });
+    }
+    public static void NoteBook(){
+        Note app = new Note();
+        app.setVisible(true);
+       // app.pack();
     }
 }
