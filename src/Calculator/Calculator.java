@@ -78,6 +78,13 @@ public class Calculator extends JFrame{
                 display.setText(display.getText()+"2");
             }
         });
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                display.setText(display.getText()+"3");
+            }
+        });
+
 
     }
 
