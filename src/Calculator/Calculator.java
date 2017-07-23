@@ -16,7 +16,7 @@ public class Calculator extends JFrame{
     public  Calculator(){
         super ("Calculator");
         setBounds(700, 300, 500, 500);
-
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
         JTextArea display= new JTextArea();//дисплей калькулятора
@@ -62,6 +62,20 @@ public class Calculator extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 display.setText(display.getText()+"0");
+            }
+        });
+
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                display.setText(display.getText()+"1");
+            }
+        });
+
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                display.setText(display.getText()+"2");
             }
         });
 
