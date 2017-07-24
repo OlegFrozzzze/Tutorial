@@ -13,12 +13,6 @@ import javax.swing.*;
 // TODO 1.2.1) Кнопки должны быть от 1 до 0, + - / *, =, C
 
 public class Calculator extends JFrame {
-    public Calculator() {
-        super("Calculator");
-        setBounds(700, 300, 500, 500);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new BorderLayout());
-
         JTextArea display = new JTextArea();//дисплей калькулятора
         JPanel buttonPanel = new JPanel(new GridLayout(3, 5));//панель с кнопками
         JButton button0 = new JButton("0");//кнопка 0
@@ -38,6 +32,14 @@ public class Calculator extends JFrame {
         JButton buttonMul = new JButton("*");//кнопка *
         JButton buttonStart = new JButton("=");//кнопка =
 
+        int firstValue = 0;
+        String operation = "+";
+    public Calculator() {
+        super("Calculator");
+        setBounds(700, 300, 500, 500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
+        
         add(display, BorderLayout.NORTH);
         add(buttonPanel, BorderLayout.CENTER);
         add(buttonStart, BorderLayout.SOUTH);
@@ -120,7 +122,7 @@ public class Calculator extends JFrame {
                 display.setText(display.getText() + "9");
             }
         });
-            //Удаление последнего действия 
+            //Удаление последнего действия
         buttonBack.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -128,6 +130,10 @@ public class Calculator extends JFrame {
                 display.setText(temp.substring(0,temp.length()-1));
             }
         });
+
+
+
+
     }
     public static void CalculatorMain() {
         Calculator calculator = new Calculator();
