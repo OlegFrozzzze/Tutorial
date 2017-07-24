@@ -39,7 +39,7 @@ public class Calculator extends JFrame {
         setBounds(700, 300, 500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        
+
         add(display, BorderLayout.NORTH);
         add(buttonPanel, BorderLayout.CENTER);
         add(buttonStart, BorderLayout.SOUTH);
@@ -131,6 +131,15 @@ public class Calculator extends JFrame {
             }
         });
 
+        //Добавил равно
+        buttonSum.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                firstValue = Integer.valueOf(display.getText());
+                display.setText("");
+                operation = "+";
+            }
+        });
 
 
 
