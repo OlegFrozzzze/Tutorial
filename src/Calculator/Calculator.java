@@ -120,6 +120,14 @@ public class Calculator extends JFrame {
                 display.setText(display.getText() + "9");
             }
         });
+            //Удаление последнего действия 
+        buttonBack.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String temp = display.getText();
+                display.setText(temp.substring(0,temp.length()-1));
+            }
+        });
     }
     public static void CalculatorMain() {
         Calculator calculator = new Calculator();
