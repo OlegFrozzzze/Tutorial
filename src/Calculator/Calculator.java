@@ -70,7 +70,7 @@ public class Calculator extends JFrame {
         button7.addActionListener(e -> display.setText(display.getText() + "7"));
         button8.addActionListener(e -> display.setText(display.getText() + "8"));
         button9.addActionListener(e -> display.setText(display.getText() + "9"));
-        
+
             //Удаление последнего действия
         buttonBack.addActionListener(e -> {
             String temp = display.getText();
@@ -95,7 +95,12 @@ public class Calculator extends JFrame {
             display.setText("");
             operation = "/";
         });
-
+        // Добавил вычитание
+        buttonSub.addActionListener(e -> {
+            firstValue = Integer.valueOf(display.getText());
+            display.setText("");
+            operation = "-";
+        });
 
 
     }
