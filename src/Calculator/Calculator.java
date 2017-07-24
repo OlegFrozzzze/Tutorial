@@ -60,103 +60,40 @@ public class Calculator extends JFrame {
         buttonPanel.add(buttonDivide);
         setVisible(true);
 
-        button0.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "0");
-            }
-        });
-
-        button1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "1");
-            }
-        });
-
-        button2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "2");
-            }
-        });
-        button3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "3");
-            }
-        });
-        button4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "4");
-            }
-        });
-        button5.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "5");
-            }
-        });
-        button6.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "6");
-            }
-        });
-        button7.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "7");
-            }
-        });
-        button8.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "8");
-            }
-        });
-        button9.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                display.setText(display.getText() + "9");
-            }
-        });
+        button0.addActionListener(e -> display.setText(display.getText() + "0"));
+        button1.addActionListener(e -> display.setText(display.getText() + "1"));
+        button2.addActionListener(e -> display.setText(display.getText() + "2"));
+        button3.addActionListener(e -> display.setText(display.getText() + "3"));
+        button4.addActionListener(e -> display.setText(display.getText() + "4"));
+        button5.addActionListener(e -> display.setText(display.getText() + "5"));
+        button6.addActionListener(e -> display.setText(display.getText() + "6"));
+        button7.addActionListener(e -> display.setText(display.getText() + "7"));
+        button8.addActionListener(e -> display.setText(display.getText() + "8"));
+        button9.addActionListener(e -> display.setText(display.getText() + "9"));
+        
             //Удаление последнего действия
-        buttonBack.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String temp = display.getText();
-                display.setText(temp.substring(0,temp.length()-1));
-            }
+        buttonBack.addActionListener(e -> {
+            String temp = display.getText();
+            display.setText(temp.substring(0,temp.length()-1));
         });
 
         //Добавил равно
-        buttonSum.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                firstValue = Integer.valueOf(display.getText());
-                display.setText("");
-                operation = "+";
-            }
+        buttonSum.addActionListener(e -> {
+            firstValue = Integer.valueOf(display.getText());
+            display.setText("");
+            operation = "+";
         });
         //Добавил *
-        buttonMul.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                firstValue = Integer.valueOf(display.getText());
-                display.setText("");
-                operation = "*";
-            }
+        buttonMul.addActionListener(e -> {
+            firstValue = Integer.valueOf(display.getText());
+            display.setText("");
+            operation = "*";
         });
-        //Добавил деление 
-        buttonDivide.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                firstValue = Integer.valueOf(display.getText());
-                display.setText("");
-                operation = "/";
-            }
+        //Добавил деление
+        buttonDivide.addActionListener(e -> {
+            firstValue = Integer.valueOf(display.getText());
+            display.setText("");
+            operation = "/";
         });
 
 
