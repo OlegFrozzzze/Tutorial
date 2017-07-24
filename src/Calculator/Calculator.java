@@ -101,7 +101,23 @@ public class Calculator extends JFrame {
             display.setText("");
             operation = "-";
         });
-
+        buttonStart.addActionListener(e -> {
+            int secondValue = Integer.valueOf(display.getText());
+            if("+".equals(operation)){
+                display.setText((firstValue+secondValue)+"");
+            }
+            if("-".equals(operation)){
+                display.setText((firstValue-secondValue)+"");
+            }
+            if("*".equals(operation)){
+                display.setText((firstValue*secondValue)+"");
+            }
+            if("/".equals(operation)){
+                display.setText((firstValue/secondValue)+"");
+            }
+            firstValue = 0;
+            operation = "+";
+        });
 
     }
     public static void CalculatorMain() {
