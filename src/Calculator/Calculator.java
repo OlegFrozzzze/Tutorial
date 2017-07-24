@@ -140,6 +140,15 @@ public class Calculator extends JFrame {
                 operation = "+";
             }
         });
+        //Добавил * 
+        buttonMul.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                firstValue = Integer.valueOf(display.getText());
+                display.setText("");
+                operation = "*";
+            }
+        });
 
 
 
