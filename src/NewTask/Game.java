@@ -1,5 +1,6 @@
 package NewTask;
 import javax.swing.*;
+import java.awt.*;
 
 //сдесь будет игра тетрис
 public class Game extends JFrame {
@@ -16,8 +17,12 @@ public class Game extends JFrame {
         crowsCalculation = new JButton("Счётчик ворон");
         Note = new JButton("Блокнот");
 
-        
+        JPanel buttonsPanel = new JPanel(new GridLayout(3, 1));
+        buttonsPanel.add(calculator);
+        buttonsPanel.add(crowsCalculation);
+        buttonsPanel.add(Note);
 
+        add(buttonsPanel, BorderLayout.CENTER);
 
     }
     public static void myWindowApp(){
