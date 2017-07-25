@@ -1,6 +1,9 @@
 package NewTask;
+import Calculator.*;
 import javax.swing.*;
 import java.awt.*;
+
+import static Calculator.Calculator.CalculatorMain;
 
 //сдесь будет игра тетрис
 public class Game extends JFrame {
@@ -21,9 +24,9 @@ public class Game extends JFrame {
         buttonsPanel.add(calculator);
         buttonsPanel.add(crowsCalculation);
         buttonsPanel.add(Note);
-
         add(buttonsPanel, BorderLayout.CENTER);
 
+        calculator.addActionListener(e -> CalculatorMain());
     }
     public static void myWindowApp(){
         Game app = new Game();
