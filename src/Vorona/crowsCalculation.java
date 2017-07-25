@@ -39,7 +39,7 @@ public class crowsCalculation extends JFrame {
             crowsCounter = crowsCounter + 1;     //Добавляем одну ворону
             updateCrowCounter(); //Сообщаем приложению, что количество ворон изменилось
         });
-        
+
         //Удаляем ворону
         removeCrowButton.addActionListener(e -> {
             if (crowsCounter > 0) {

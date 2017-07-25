@@ -95,7 +95,7 @@ public class Calculator extends JFrame {
             firstValue = 0;
             operation = "+";
         });
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
         setLayout(new BorderLayout());
         add(display, BorderLayout.NORTH);
         add(buttonPanel, BorderLayout.CENTER);
