@@ -6,5 +6,6 @@ public class AllTask {
         TaskJavaRush.Task();
         TaskStepik.Text();
         StepikOne.text();
+        ScreeningOfFields.Screening();
     }
 }
