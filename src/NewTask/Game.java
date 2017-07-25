@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 import static Calculator.Calculator.CalculatorMain;
+import static Note.Note.NoteBook;
 import static Vorona.crowsCalculation.Vorona;
 
 //сдесь будет игра тетрис
@@ -29,6 +30,7 @@ public class Game extends JFrame {
 
         calculator.addActionListener(e -> CalculatorMain());
         crowsCalculation.addActionListener(e -> Vorona());
+        Note.addActionListener(e -> NoteBook());
     }
     public static void myWindowApp(){
         Game app = new Game();
