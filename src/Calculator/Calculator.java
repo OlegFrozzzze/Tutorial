@@ -96,7 +96,25 @@ public class Calculator extends JFrame {
             operation = "+";
         });
 
-
+        setLayout(new BorderLayout());
+        add(display, BorderLayout.NORTH);
+        add(buttonPanel, BorderLayout.CENTER);
+        add(buttonStart, BorderLayout.SOUTH);
+        buttonPanel.add(button1);
+        buttonPanel.add(button2);
+        buttonPanel.add(button3);
+        buttonPanel.add(button4);
+        buttonPanel.add(button5);
+        buttonPanel.add(button6);
+        buttonPanel.add(button7);
+        buttonPanel.add(button8);
+        buttonPanel.add(button9);
+        buttonPanel.add(buttonSum);
+        buttonPanel.add(button0);
+        buttonPanel.add(buttonSub);
+        buttonPanel.add(buttonMul);
+        buttonPanel.add(buttonBack);
+        buttonPanel.add(buttonDivide);
 
         setVisible(true);
     }
