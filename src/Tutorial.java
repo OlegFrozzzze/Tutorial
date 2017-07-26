@@ -3,11 +3,12 @@ import HomeWork.AllTask;
 import NewTask.Game;
 import Tom1.TaskAll;
 
+
 public class Tutorial {
     public static void main(String[] args) throws Exception {
-            TaskAll.Hello();
-         AllTask.allTask();
-         Game.myWindowApp();
+       // TaskAll.Hello();
+       // AllTask.allTask();
+        Game.myWindowApp();
     }
 }
 
