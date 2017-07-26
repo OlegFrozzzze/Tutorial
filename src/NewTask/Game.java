@@ -15,7 +15,9 @@ public class Game extends JFrame {
         JButton calculator = new JButton("Калькулятор");
         JButton crowsCalculation = new JButton("Счётчик ворон");
         JButton Note = new JButton("Блокнот");
+        JTextArea text = new JTextArea();
 
+        add(text, BorderLayout.SOUTH);
         JPanel buttonsPanel = new JPanel(new GridLayout(3, 1));
         buttonsPanel.add(calculator);
         buttonsPanel.add(crowsCalculation);
