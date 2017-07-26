@@ -1,12 +1,12 @@
-import Calculator.Calculator;
+
+import HomeWork.AllTask;
 import NewTask.Game;
-import Note.*;
-import Vorona.crowsCalculation;
+import Tom1.TaskAll;
 
 public class Tutorial {
     public static void main(String[] args) throws Exception {
-        //  TaskAll.Hello();
-        // AllTask.allTask();
+            TaskAll.Hello();
+         AllTask.allTask();
          Game.myWindowApp();
     }
 }

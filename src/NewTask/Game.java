@@ -6,7 +6,6 @@ import static Calculator.Calculator.CalculatorMain;
 import static Note.Note.NoteBook;
 import static Vorona.crowsCalculation.Vorona;
 
-//сдесь будет игра тетрис
 public class Game extends JFrame {
     public Game(){
         super("Me First Window"); // Заголовок Окна
