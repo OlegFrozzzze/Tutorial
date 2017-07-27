@@ -73,7 +73,6 @@ public class Note extends JFrame {
                 } catch (IOException eq) {
                     eq.printStackTrace();
                 }
-
             }
         });
         menuExit.addActionListener(new ActionListener() {

@@ -1,4 +1,4 @@
-
+import Note.Note;
 import HomeWork.AllTask;
 import NewTask.Game;
 import Tom1.TaskAll;
@@ -9,6 +9,7 @@ public class Tutorial {
        // TaskAll.Hello();
         //AllTask.AllTaskVer();
         //Game.myWindowApp();
+        Note.NoteBook();
     }
 }
 
