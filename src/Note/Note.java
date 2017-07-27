@@ -67,7 +67,12 @@ public class Note extends JFrame {
                 String output = theText.getText();
                 f.showSaveDialog(null);
                 File file = f.getSelectedFile();
-                
+                try {
+                    FileOutputStream writer = new FileOutputStream(file);
+                    writer.write(output.getBytes());
+                } catch (IOException eq) {
+                    eq.printStackTrace();
+                }
 
             }
         });
