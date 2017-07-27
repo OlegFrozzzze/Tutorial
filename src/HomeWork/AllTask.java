@@ -12,7 +12,4 @@ public class AllTask {
     public static void AllTaskVer() {
         AllTask app = new AllTask();
     }
-
-
-
 }
