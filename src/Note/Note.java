@@ -3,8 +3,7 @@ package Note;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
 
 
 public class Note extends JFrame {
@@ -14,6 +13,7 @@ public class Note extends JFrame {
     private MenuItem menuExit;//Элемент меню
     private MenuItem menuAbout;//Элемент меню
     private JTextArea theText; //Поле ввода текста
+    private JFileChooser f = new JFileChooser();
 
     public Note() {
         super("Note");
@@ -64,11 +64,8 @@ public class Note extends JFrame {
         });
         menuSave.addActionListener(new AbstractAction() {
             public void actionPerformed(ActionEvent e) {
-                try {
-                    PrintWriter out = new PrintWriter("C:\\Users\\ОЛЕГ\\Desktop\\text.txt");
-                } catch (FileNotFoundException e1) {
-                    e1.printStackTrace();
-                }
+                String output = theText.getText();
+                
 
             }
         });
@@ -83,9 +80,10 @@ public class Note extends JFrame {
             }
         });
     }
-    public static void NoteBook(){
+
+    public static void NoteBook() {
         Note app = new Note();
         app.setVisible(true);
-       // app.pack();
+        // app.pack();
     }
 }
