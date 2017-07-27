@@ -1,5 +1,4 @@
 package NewTask;
-import Tom1.TaskAll;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,10 +6,11 @@ import java.awt.*;
 import static Calculator.Calculator.CalculatorMain;
 import static Note.Note.NoteBook;
 import static Vorona.crowsCalculation.Vorona;
-import static Tom1.TaskAll.Hello;
+import static java.lang.System.out;
+
 
 public class Game extends JFrame {
-    public Game(){
+    public Game() {
         super("Me First Window"); // Заголовок Окна
         setBounds(100, 100, 200, 200); //выстовляем размер окна
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//закрываем окно и завершаем программу
@@ -21,7 +21,7 @@ public class Game extends JFrame {
         JTextArea text = new JTextArea();
         JScrollPane scrollBar = new JScrollPane(text);
 
-        add(scrollBar,BorderLayout.CENTER);
+        add(scrollBar, BorderLayout.CENTER);
 
 
         JPanel buttonsPanel = new JPanel(new GridLayout(3, 1));
@@ -39,9 +39,7 @@ public class Game extends JFrame {
     }
 
 
-
-
-    public static void myWindowApp(){
+    public static void myWindowApp() {
         Game app = new Game();
         app.setVisible(true);
     }
