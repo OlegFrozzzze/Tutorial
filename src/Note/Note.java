@@ -65,6 +65,8 @@ public class Note extends JFrame {
         menuSave.addActionListener(new AbstractAction() {
             public void actionPerformed(ActionEvent e) {
                 String output = theText.getText();
+                f.showSaveDialog(null);
+                File file = f.getSelectedFile();
                 
 
             }
