@@ -7,8 +7,17 @@ public class TaskJavaRushTwo {
     public static void Rush() throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String name = reader.readLine();
+
         String chislo = reader.readLine();
-        
+
+
+        int age1 = Integer.parseInt(chislo);
+
+        if (age1 < 18) {
+            System.out.println("Подрасти еще");
+        } else {
+            System.out.println("Проходите");
+        }
     }
 }
+
