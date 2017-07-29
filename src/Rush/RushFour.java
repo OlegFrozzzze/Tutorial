@@ -12,6 +12,7 @@ public class RushFour {
         int b = Integer.parseInt(reader.readLine());
         int c = Integer.parseInt(reader.readLine());
         int x = 0;
+
         if (a > 0)
             x++;
         if (b > 0)
