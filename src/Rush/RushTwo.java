@@ -16,9 +16,9 @@ public class RushTwo {
             System.out.println("отрицательное четное число");
         } else if (a > 0 && b) {
             System.out.println("положительное четное число");
-        }else if (a < 0 && !b) {
+        } else if (a < 0 && !b) {
             System.out.println("отрицательное нечетное число");
-        } else  if(a > 0 && !b) {
+        } else if (a > 0 && !b) {
             System.out.println("положительное нечетное число");
         }
     }
