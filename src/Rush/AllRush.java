@@ -9,10 +9,22 @@ public class AllRush {
         int a = Integer.parseInt(reader.readLine());
         if (a == 1) {
             RushOne.Rush();
+        } else {
+            if (a == 2) {
+                RushTwo.Rush();
+            } else {
+                if (a == 3) {
+                    RushThree.Rush();
+                } else {
+                    if (a == 4) {
+                        RushFour.Rush();
+                    } else {
+                        if (a == 5) {
+                            RushFive.Rush();
+                        }
+                    }
+                }
+            }
         }
-        RushTwo.Rush();
-        RushThree.Rush();
-        RushFour.Rush();
-        RushFive.Rush();
     }
 }
