@@ -6,5 +6,6 @@ public class AllRush {
         RushTwo.Rush();
         RushThree.Rush();
         RushFour.Rush();
+        RushFive.Rush();
     }
 }
