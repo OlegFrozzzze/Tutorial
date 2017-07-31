@@ -17,13 +17,19 @@ public class RushSix {
 
         int X = toX - getX;
         int Y = toY - getY;
-        
+
         if (X > 0) {
             System.out.println("Поверни вправо");
             for (int i = 0; i < X; i++) {
                 System.out.println("Сделай шаг");
             }
             System.out.println("Поверни влево");
+        }else {
+            System.out.println("Поверни влево");
+            for (int i = 0; i < Math.abs(X); i++) {
+                System.out.println("Сделай шаг");
+            }
+            System.out.println("Поверни вправо");
         }
     }
 }
