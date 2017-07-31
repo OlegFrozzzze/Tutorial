@@ -5,15 +5,17 @@ import Rush.AllRush;
 import Tom1.TaskAll;
 
 
+
 public class Tutorial {
     public static void main(String[] args) throws Exception {
-       // TaskAll.Hello();
+        // TaskAll.Hello();
         //AllTask.AllTaskVer();
         //Game.myWindowApp();
-       // Note.NoteBook();
-        AllRush.Allrush();
+        // Note.NoteBook();
+        //AllRush.Allrush();
     }
 }
+
 
 
 
