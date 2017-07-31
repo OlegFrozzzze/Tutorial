@@ -13,5 +13,7 @@ public class RushSeven {
             System.out.println(a);
             n--;
         }
+
+        
     }
 }
