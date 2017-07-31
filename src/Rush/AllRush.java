@@ -21,6 +21,10 @@ public class AllRush {
                     } else {
                         if (a == 5) {
                             RushFive.Rush();
+                        } else {
+                            if (a == 6) {
+                                RushSix.Rush();
+                            }
                         }
                     }
                 }
