@@ -31,6 +31,19 @@ public class RushSix {
             }
             System.out.println("Поверни вправо");
         }
+        if (Y > 0) {
+            for (int i = 0; i < Y; i++) {
+                System.out.println("Сделай шаг");
+            }
+        } else {
+            System.out.println("Поверни влево");
+            System.out.println("Поверни влево");
+            for (int i = 0; i < Math.abs(Y); i++) {
+                System.out.println("Сделай шаг");
+            }
+            System.out.println("Поверни вправо");
+            System.out.println("Поверни вправо");
+        }
     }
 }
 
