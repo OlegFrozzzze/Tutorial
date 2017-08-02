@@ -13,6 +13,7 @@ public class RushNine {
         int m = Integer.parseInt(reader.readLine());
         int y = Integer.parseInt(reader.readLine());
 
-        
+        System.out.println("Меня зовут " + name + ".");
+        System.out.println("Я родился " + d + "." + m + "." + y);
     }
 }
