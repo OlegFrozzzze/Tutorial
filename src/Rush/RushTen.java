@@ -9,6 +9,8 @@ public class RushTen {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
 
-        
+        for (int i = 0; i < 10; i ++){
+            System.out.println(s+" любит меня.");
+        }
     }
 }
