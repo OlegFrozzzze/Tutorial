@@ -1,12 +1,18 @@
 package Rush;
 
+import Rush.RushFromOneToTen.JRushOne;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class AllRush {
     public static void Allrush() throws Exception {
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         int a = Integer.parseInt(reader.readLine());
+
+
         if (a == 1) {
             RushOne.Rush();
         } else {
@@ -28,6 +34,15 @@ public class AllRush {
                         }
                     }
                 }
+            }
+        }
+        int b = Integer.parseInt(reader.readLine());
+
+        if (b <= 0) {
+            System.out.println("Стоп");
+        } else {
+            if (b == 1) {
+                JRushOne.Jrush();
             }
         }
     }
