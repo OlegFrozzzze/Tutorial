@@ -22,6 +22,8 @@ public class JRushTwo {
             int agePlus = this.age > anotherCat.age?1:0;
             int weightPlus = this.weight>anotherCat.weight?1:0;
             int strengthPlus= this.strength>anotherCat.strength?1:0;
+
+            int score = agePlus + weightPlus + strengthPlus;
             return true;
         }
     }
