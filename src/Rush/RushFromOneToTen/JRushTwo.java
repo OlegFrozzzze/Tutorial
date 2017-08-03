@@ -9,7 +9,11 @@ public class JRushTwo {
         int age;
         int weight;
         int strength;
+
+        public Cat(String name, int age, int weight, int strength){
+        }
     }
+
 
 }
 
