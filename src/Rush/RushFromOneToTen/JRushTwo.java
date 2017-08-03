@@ -20,6 +20,7 @@ public class JRushTwo {
 
         public boolean fight(Cat anotherCat) {
             int agePlus = this.age > anotherCat.age?1:0;
+            int weightPlus = this.weight>anotherCat.weight?1:0;
             
             return true;
         }
