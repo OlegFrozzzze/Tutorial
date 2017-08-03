@@ -11,6 +11,10 @@ public class JRushTwo {
         int strength;
 
         public Cat(String name, int age, int weight, int strength){
+            this.name=name;
+            this.age=age;
+            this.weight=weight;
+            this.strength=strength;
         }
     }
 
