@@ -13,7 +13,12 @@ public class JRushThree {
         int c = Integer.parseInt(reader.readLine());
         int d = Integer.parseInt(reader.readLine());
 
-        for (int i = 0; i < a; i++)
-            System.out.print("-");
+
+        for (int i = 0; i < a; i++) {
+            System.out.print("--");
+        }
+        System.out.println("");
+        for (int i = 0; i < b; i++)
+            System.out.println("|");
     }
 }
