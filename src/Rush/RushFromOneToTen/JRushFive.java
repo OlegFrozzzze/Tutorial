@@ -10,6 +10,9 @@ public class JRushFive {
     public static void JRush() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+
+        ArrayList<Integer> lst = new ArrayList<>();
+
         
     }
 }
