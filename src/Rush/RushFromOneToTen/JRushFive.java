@@ -8,6 +8,8 @@ import java.util.ArrayList;
 public class JRushFive {
 
     public static void JRush() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         
     }
 }
