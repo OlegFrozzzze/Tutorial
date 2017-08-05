@@ -16,6 +16,8 @@ public class JRushFive {
         for (int i = 0; i < 10; i++) {
             lst.add(Integer.parseInt(reader.readLine()));
         }
-        
+        for (int i = lst.size() - 1; i >= 0; i--) {
+            System.out.println(lst.get(i));
+        }
     }
 }
