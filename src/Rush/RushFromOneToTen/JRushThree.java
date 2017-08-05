@@ -11,8 +11,6 @@ public class JRushThree {
         int a = Integer.parseInt(reader.readLine());
         int b = Integer.parseInt(reader.readLine());
         
-
-
         for (int i = 0; i < a; i++) {
             System.out.print("--");
         }
