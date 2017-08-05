@@ -13,6 +13,9 @@ public class JRushFive {
 
         ArrayList<Integer> lst = new ArrayList<>();
 
+        for (int i = 0; i < 10; i++) {
+            lst.add(Integer.parseInt(reader.readLine()));
+        }
         
     }
 }
