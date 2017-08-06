@@ -10,7 +10,7 @@ public class JRushThree {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int a = Integer.parseInt(reader.readLine());
         int b = Integer.parseInt(reader.readLine());
-        
+
         for (int i = 0; i < a; i++) {
             System.out.print("--");
         }
@@ -18,5 +18,5 @@ public class JRushThree {
         for (int i = 0; i < b; i++)
             System.out.println("|");
     }
-
 }
+
