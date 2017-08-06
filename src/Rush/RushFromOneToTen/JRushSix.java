@@ -11,12 +11,25 @@ import java.nio.file.FileSystemException;
 public class JRushSix {
     public static StatelessBean BEAN = new StatelessBean();
 
-    public static void main(String[] args) throws IOException {
-        processExceptions();
+    public static void main(String[] args) {
+        try {
+            processExceptions();
+        } catch (FileSystemException e) {
+            BEAN.log(e);
+        }
     }
 
-    public static void processExceptions() throws IOException {
-        BEAN.methodThrowExceptions();
+    public static void processExceptions() throws FileSystemException {
+        try {
+            BEAN.methodThrowExceptions();
+        } catch (FileSystemException e) {
+            BEAN.log(e);
+            throw e;
+        } catch (CharConversionException e) {
+            BEAN.log(e);
+        } catch (IOException e) {
+            BEAN.log(e);
+        }
     }
 
     public static class StatelessBean {
