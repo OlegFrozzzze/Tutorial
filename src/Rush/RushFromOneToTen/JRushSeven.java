@@ -9,7 +9,20 @@ public class JRushSeven {
     }
 
     public static void processExceptions(JRushSeven obj) {
-        
+        try {
+            obj.method1();
+            obj.method2();
+            obj.method3();
+        } catch (RemoteException e) {
+            System.out.println("RemoteException");
+
+        } catch (NoSuchFieldException e) {
+            System.out.println("NoSuchFieldException");
+
+        } catch (IOException e) {
+            System.out.println("IOException");
+
+        }
     }
 
     public void method1() throws IOException {
