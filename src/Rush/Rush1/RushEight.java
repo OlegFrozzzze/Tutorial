@@ -1,4 +1,4 @@
-package Rush;
+package Rush.Rush1;
 
 public class RushEight {
     public static void Rush() {
