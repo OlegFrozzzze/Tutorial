@@ -18,7 +18,6 @@ public class JRushSix {
             BEAN.log(e);
         }
     }
-
     public static void processExceptions() throws FileSystemException {
         try {
             BEAN.methodThrowExceptions();
@@ -31,12 +30,10 @@ public class JRushSix {
             BEAN.log(e);
         }
     }
-
     public static class StatelessBean {
         public void log(Exception exception) {
             System.out.println(exception.getMessage() + ", " + exception.getClass().getSimpleName());
         }
-
         public void methodThrowExceptions() throws CharConversionException, FileSystemException, IOException {
             int i = (int) (Math.random() * 3);
             if (i == 0)

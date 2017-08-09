@@ -21,18 +21,14 @@ public class JRushSeven {
 
         } catch (IOException e) {
             System.out.println("IOException");
-
         }
     }
-
     public void method1() throws IOException {
         throw new IOException();
     }
-
     public void method2() throws NoSuchFieldException {
         throw new NoSuchFieldException();
     }
-
     public void method3() throws RemoteException {
         throw new RemoteException();
     }
