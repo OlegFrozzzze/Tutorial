@@ -17,7 +17,7 @@ public class crowsCalculation extends JFrame {
 
     public crowsCalculation() {
         super("Crow colculator");
-       // setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Подготавливаю компоненты объекта
         countLabel = new JLabel("Crow:" + " " + crowsCounter); // Создаём объект с текстом + колличество ворон

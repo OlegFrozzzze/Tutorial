@@ -5,7 +5,6 @@ public class TaskTwo {
         int value = 0;
         if (value == 0) {
             return false;
-
         } else {
             int rol = Math.abs(value);
             return (rol & (rol - 1)) == 0;
