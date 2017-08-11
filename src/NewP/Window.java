@@ -19,6 +19,7 @@ public class Window extends JFrame{
         add(buttonsPanel, BorderLayout.WEST);
 
         text = new JTextArea();
+        add(text,BorderLayout.SOUTH);
     }
     public static void Window(){
         Window add = new Window();
