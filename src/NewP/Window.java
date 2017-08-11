@@ -12,7 +12,8 @@ public class Window extends JFrame{
         textArea();
     }
     private  void textArea(){
-
+        JPanel buttonsPanel = new JPanel(new FlowLayout());
+        
         text = new JTextArea();
     }
     public static void Window(){
