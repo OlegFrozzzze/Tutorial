@@ -13,7 +13,11 @@ public class Window extends JFrame{
     }
     private  void textArea(){
         JPanel buttonsPanel = new JPanel(new FlowLayout());
-        
+
+        button = new JButton("123");
+        buttonsPanel.add(button);
+        add(buttonsPanel, BorderLayout.WEST);
+
         text = new JTextArea();
     }
     public static void Window(){
