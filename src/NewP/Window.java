@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Window extends JFrame{
     private JTextArea text;
-    private JTextArea text2;
+   // private JTextArea text2;
     private JButton button;
     public  Window (){
         super("Window");
@@ -22,8 +22,10 @@ public class Window extends JFrame{
 
         text = new JTextArea();
         add(text,BorderLayout.SOUTH);
-        text2 = new JTextArea();
-        add(text2, BorderLayout.WEST);
+
+        button.addActionListener(e -> {
+            Window();
+        });
     }
     public static void Window(){
         Window add = new Window();
