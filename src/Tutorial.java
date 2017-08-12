@@ -1,3 +1,4 @@
+import NewP.Window;
 import Note.Note;
 import HomeWork.AllTask;
 import NewTask.Game;
@@ -15,14 +16,14 @@ import java.util.Collection;
 
 public final class Tutorial {
     public static void main(String[] args) throws Exception {
-
+    Window.Window();
 //        JRushThree.JRush();
 //        AllRush.Allrush();
 //
 // TaskAll.Hello();
 //AllTask.AllTaskVer();
 //Game.myWindowApp();
-Note.NoteBook();
+//Note.NoteBook();
 //AllRush.Allrush();
     }
 }

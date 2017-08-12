@@ -23,7 +23,7 @@ public class Window extends JFrame{
         text = new JTextArea();
         add(text,BorderLayout.SOUTH);
 
-        button.addActionListener(e -> {
+        button.addActionListener(e ->{
             Window();
         });
     }
