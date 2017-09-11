@@ -23,12 +23,10 @@ public class Window extends JFrame{
         text = new JTextArea();
         add(text,BorderLayout.SOUTH);
 
-        button.addActionListener(e ->{
-            Window();
-        });
+        button.addActionListener(e -> Window());
     }
     public static void Window(){
-        Window add = new Window();
-        add.setVisible(true);
+        Window window = new Window();
+        window.setVisible(true);
     }
 }

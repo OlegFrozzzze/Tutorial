@@ -1,12 +1,15 @@
 package NewTask;
 
+import NewP.Window;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import static Calculator.Calculator.CalculatorMain;
 import static Note.Note.NoteBook;
 import static Vorona.crowsCalculation.Vorona;
-import static java.lang.System.out;
 
 
 public class Game extends JFrame {
@@ -18,6 +21,7 @@ public class Game extends JFrame {
         JButton calculator = new JButton("Калькулятор");
         JButton crowsCalculation = new JButton("Счётчик ворон");
         JButton Note = new JButton("Блокнот");
+        JButton NewP = new JButton("fwfw");
         JTextArea text = new JTextArea();
         JScrollPane scrollBar = new JScrollPane(text);
 
@@ -28,11 +32,13 @@ public class Game extends JFrame {
         buttonsPanel.add(calculator);
         buttonsPanel.add(crowsCalculation);
         buttonsPanel.add(Note);
+        buttonsPanel.add(NewP);
         add(buttonsPanel, BorderLayout.NORTH);
 
         calculator.addActionListener(e -> CalculatorMain());
         crowsCalculation.addActionListener(e -> Vorona());
         Note.addActionListener(e -> NoteBook());
+      //  NewP.addActionListener(e-> );
 
 
 
